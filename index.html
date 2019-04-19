@@ -1,7 +1,155 @@
 <html>
 
 <head>
+<script>
 
+    function fade(imagem){      
+
+        $(imagem).animate({'opacity':1});
+
+    }
+
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+    $("#content").find("[id^='tab']").hide(); // Hide all content
+
+    $("#tabs li:first").attr("id","current"); // Activate the first tab
+
+    $("#content #tab1").fadeIn(); // Show first tab's content
+
+    
+
+    $('#tabs a').click(function(e) {
+
+        e.preventDefault();
+
+        if ($(this).closest("li").attr("id") == "current"){ //detection for current tab
+
+         return;       
+
+        }
+
+        else{             
+
+          $("#content").find("[id^='tab']").hide(); // Hide all content
+
+          $("#tabs li").attr("id",""); //Reset id's
+
+          $(this).parent().attr("id","current"); // Activate this
+
+          $('#' + $(this).attr('name')).fadeIn(); // Show content for the current tab
+
+        }
+
+    });
+
+});
+
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script>
+
+$(document).ready(function() {
+
+    $("#content2").find("[id^='info']").hide(); // Hide all content
+
+    $("#tabs2 li:first").attr("id","current"); // Activate the first tab
+
+    $("#content2 #info1").fadeIn(); // Show first tab's content
+
+    
+
+    $('#tabs2 a').click(function(e) {
+
+        e.preventDefault();
+
+        if ($(this).closest("li").attr("id") == "current"){ //detection for current tab
+
+         return;       
+
+        }
+
+        else{             
+
+          $("#content2").find("[id^='info']").hide(); // Hide all content
+
+          $("#tabs2 li").attr("id",""); //Reset id's
+
+          $(this).parent().attr("id","current"); // Activate this
+
+          $('#' + $(this).attr('name')).fadeIn(); // Show content for the current tab
+
+        }
+
+    });
+
+});
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63374362-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+<div class="header">
+<div class="box_h">
+<div class="logo">
+<A HREF="http://www.seriesonlinex.com/"><img src="http://www.seriesonlinex.com/wp-content/uploads/2016/05/seriesonlinexfixa.png" alt="Series Online" /></a>
+</div>
+<div id="navigation">
+<ul id="menu-header" class=""><li id="menu-item-902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-902"><a href="http://www.seriesonlinex.com">Inicio</a></li>
+<li id="menu-item-907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-907"><a href="http://www.seriesonlinex.com/contato/">Contato</a></li>
+<li id="menu-item-1289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1289"><a href="http://www.baixarfilmestorrent.me">Filmes Torrent</a></li>
+<li id="menu-item-1501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1501"><a href="https://xat.com/newoption">Chat Online</a></li>
+</ul>
+</div>
+<div class="buscador">
+<form method="get" id="searchform" action="http://www.seriesonlinex.com">
+<input type="text" name="s" id="s" placeholder="Pesquisa .." />
+</form>
+</div>
+</div>
+</div>
+
+<div class="contenedor">
+<div class="single">
+<div class="player">
+
+<div id="content">
+<div id="tab1">
+<iframe width="100%" height="400" src="http://www.verfilmes.biz/series/game-of-thrones-todas-as-temporadas-dublado--legendado.html?ref=seriesx" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<div align="bannerPOST">
+<center>
+<tr>
+<td width="100%">
+</a><a href="http://bit.ly/2GM2RK2" target="_blank"><img src="http://i.imgur.com/1rV6bAV.png" width="460" height="54" /></a>
+</tr>
+</table>
+</center>
+  
+  
+  
+  
+  
+  
+  
+  
 <body>
 
   </body>
